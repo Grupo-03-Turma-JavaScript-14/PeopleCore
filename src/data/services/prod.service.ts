@@ -11,9 +11,7 @@ export class ProdService implements TypeOrmOptionsFactory {
       url: process.env.DATABASE_URL,
       logging: false,
       dropSchema: false,
-      ssl: {
-        rejectUnauthorized: false,
-      },
+      ssl:  false,
       synchronize: true,
       autoLoadEntities: true,
     };
